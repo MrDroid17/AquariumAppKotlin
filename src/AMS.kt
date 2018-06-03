@@ -15,7 +15,12 @@ fun main(args: Array<String>){
     println(message)
 
     feedTheFish()
-    swim(50,"slow")
+
+    /***
+     * using companinon objects
+     */
+    ShouldChangeWater.swim(50,"slow")
+
 }
 
 
