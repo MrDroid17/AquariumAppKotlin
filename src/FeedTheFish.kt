@@ -6,6 +6,14 @@ fun feedTheFish() {
      println("Today is $day and fish eats $fishFood.")
 
     /***
+     * default repeat function[]
+     */
+    repeat(3){
+        println("Today is $day and fish eats $fishFood. Repeat $it")
+
+    }
+
+    /***
      * using companion objects
      */
     ShouldChangeWater.shouldChangeWater(day)
@@ -17,8 +25,6 @@ fun feedTheFish() {
     }
 
 }
-
-
 
 fun randomDay() : String {
     val weekDays = listOf("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")

@@ -1,10 +1,12 @@
 class ShouldChangeWater {
 
     companion object {
-        fun shouldChangeWater(day: String, temp: Int= 20, dirty: Int = 20): Boolean {
-
-
-
+        private fun getDirtySensorReading() = 20
+        /***
+         * example of higher order function
+         * function which take or return another function as parameter
+         */
+        fun shouldChangeWater(day: String, temp: Int= 20, dirty: Int = getDirtySensorReading()): Boolean {
 
             /***
              * first way to return value
@@ -40,8 +42,8 @@ class ShouldChangeWater {
                 isDirty(dirty) -> true
                 else -> false
             }
-
         }
+
 
         private fun isTooHot(temp: Int) = temp > 35
 
