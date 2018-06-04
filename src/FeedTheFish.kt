@@ -23,7 +23,6 @@ fun feedTheFish() {
     if(ShouldChangeWater.shouldChangeWater(day)){
         println("Today is $day Change water today")
     }
-
 }
 
 fun randomDay() : String {

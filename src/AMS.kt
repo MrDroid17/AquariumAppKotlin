@@ -20,6 +20,8 @@ fun main(args: Array<String>){
      * using companinon objects
      */
     ShouldChangeWater.swim(50,"slow")
+    DecorationFilter.filterExample()
+
 
 }
 
