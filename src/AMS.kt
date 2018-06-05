@@ -21,6 +21,7 @@ fun main(args: Array<String>){
      */
     ShouldChangeWater.swim(50,"slow")
     DecorationFilter.filterExample()
+    dirtyProcessorWithLambdas.dirtyProcessor()
 
 
 }

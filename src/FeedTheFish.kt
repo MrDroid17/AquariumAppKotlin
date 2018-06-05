@@ -16,6 +16,8 @@ fun feedTheFish() {
     /***
      * using companion objects
      */
+    dirtyProcessorWithLambdas.dirtyProcessor()
+
     ShouldChangeWater.shouldChangeWater(day)
     ShouldChangeWater.shouldChangeWater(day, 45)
     ShouldChangeWater.shouldChangeWater(day, 20, 60)
@@ -23,6 +25,7 @@ fun feedTheFish() {
     if(ShouldChangeWater.shouldChangeWater(day)){
         println("Today is $day Change water today")
     }
+
 }
 
 fun randomDay() : String {
