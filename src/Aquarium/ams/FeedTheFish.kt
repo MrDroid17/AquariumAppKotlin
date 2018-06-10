@@ -1,3 +1,7 @@
+package Aquarium.ams
+
+import Aquarium.sensors.dirtyProcessorWithLambdas
+import Aquarium.utils.ShouldChangeWater
 import java.util.*
 
 fun feedTheFish() {
@@ -37,16 +41,16 @@ fun food(day: String): String {
     var food = "fasting";
 
  /*   when(day) {
-        "Sunday" -> food = "flakes"
-        "Monday" -> food = "pelletes"
-        "Tuesday" -> food = "redworms"
-        "Wednesday" -> food = "granules"
-        "Thursday" -> food = "mosquitoes"
-        "Friday" -> food = "lettuce"
-        "Saturday" -> food = "plankton"
+        "Sunday" -> Aquarium.ams.food = "flakes"
+        "Monday" -> Aquarium.ams.food = "pelletes"
+        "Tuesday" -> Aquarium.ams.food = "redworms"
+        "Wednesday" -> Aquarium.ams.food = "granules"
+        "Thursday" -> Aquarium.ams.food = "mosquitoes"
+        "Friday" -> Aquarium.ams.food = "lettuce"
+        "Saturday" -> Aquarium.ams.food = "plankton"
     }
 
-    return food*/
+    return Aquarium.ams.food*/
 
     return when(day) {
         "Sunday" -> "flakes"

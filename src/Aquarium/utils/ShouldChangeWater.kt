@@ -1,3 +1,5 @@
+package Aquarium.utils
+
 class ShouldChangeWater {
 
     companion object {

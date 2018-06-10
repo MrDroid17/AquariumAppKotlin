@@ -1,3 +1,5 @@
+package Aquarium.sensors
+
 class dirtyProcessorWithLambdas {
 
     companion object {
@@ -15,7 +17,7 @@ class dirtyProcessorWithLambdas {
             dirty = updateDirty(dirty, waterFilter)
             println("your are without Lambda for dirty : $dirty")
 
-            dirty = updateDirty(dirty, ::feedFish) // :: will pass the  reference of a typed function
+            dirty = updateDirty(dirty, Companion::feedFish) // :: will pass the  reference of a typed function
             println("your are using Reference of feedFish for dirty : $dirty")
 
             //Lambda
@@ -24,8 +26,5 @@ class dirtyProcessorWithLambdas {
             })
             println("your are using Lambda for dirty : $dirty")
         }
-
-
-
     }
 }

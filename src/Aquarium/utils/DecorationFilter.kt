@@ -1,4 +1,4 @@
-
+package Aquarium.utils
 class DecorationFilter {
 
     companion object {
