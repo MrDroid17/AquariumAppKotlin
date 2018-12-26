@@ -52,6 +52,18 @@ fun food(day: String): String {
 
     return Aquarium.ams.food*/
 
+    /***
+     * Since every thing in the kotlin has a value
+     * when expression also has a value
+     * this value can be retuned
+     * ************
+     * There are some exception like While loop and for loop they dont return a value and
+     * will throw a error if you return them
+     * ************
+     * Note else case is a lot like default
+     * to execute else case remove some of the cases
+     *
+     */
     return when(day) {
         "Sunday" -> "flakes"
         "Monday" -> "pelletes"

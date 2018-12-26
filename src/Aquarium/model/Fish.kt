@@ -14,7 +14,10 @@ class Fish(val friendly: Boolean = true, volumeNeeded :Int) {
 
     //init blocks
     /***
-     * wise to have one constructor block and multiple init block if required
+     * wise to have one primary constructor block and multiple init block if required
+     * init blocks runs before secondary constructor
+     * for more functionality consider adding helper functions
+     *
      */
     init {
         if(friendly){
