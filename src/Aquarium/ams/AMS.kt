@@ -29,6 +29,7 @@ fun main(args: Array<String>){
     DecorationFilter.filterExample()
     dirtyProcessorWithLambdas.dirtyProcessor()
     buildAquarim()
+    makeFish()
 }
 
 private fun buildAquarim(){
@@ -56,6 +57,20 @@ private fun buildAquarim(){
             "width : ${fishInAquarium.width} \n" +
             "height : ${fishInAquarium.height}" )
 
+}
+
+fun feedFish(fish: FishAction){
+    // make  some food then
+    fish.eat()
+}
+
+fun makeFish(){
+    val shark = Shark()
+    val pleco = Plecotomous()
+    println("Shark: ${shark.color} \nPlecotonus: ${pleco.color}")
+
+    shark.eat()
+    pleco.eat()
 }
 
 
